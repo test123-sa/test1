@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url('../image/背景画像.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  padding: 100px 30px 80px;
+}
+
+.site-title {
+  font-size: 7.6rem;
+  margin: 50px 0 40px;
+  text-shadow: 1px 2px black;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #151515;
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+.heading {
+  margin: 30px 0px 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.section-line {
+  padding: 80px 130px;
+  /* font-size: 2.2rem; */
+}
+
+.mission-text {
+  /* padding: 70px 0 100px; */
+  line-height: 2.5;
+}
+
+.section-conf {
+  padding: 70px 0 100px;
+  font-size: 2.2rem;
+}
+
+/* vision */
+.vision ul {
+  /* padding: 70px 0 100px; */
+  display: block;
+  text-decoration: none;
+  line-height: 2;
+}
+.vision li {
+  font-size: 2.2rem;
+}
+.vision-all {
+  margin: 0 auto;
+  display: table;
+}
+.vision-ul {
+  width: auto;
+  text-align: left;
+}
+.fa-check {
+  color: greenyellow;
+  text-shadow: 1px 2px #fff;
+}
+/* value */
+.value-all {
+  margin: 0 auto;
+  display: table;
+}
+.value-ul {
+  width: auto;
+  text-align: left;
+  line-height: 2;
+}
+
+/* contact */
+.contact-form {
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+  background-color: #fff;
+  color: #fff;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: #fff;
+  color: #151515;
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.4s;
+  border-color: #151515;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-text.section-conf {
+  padding-bottom: 20px;
+}
+
+/* TEL/FAX/MAIL */
+.tel-conf {
+  font-size: 2.2rem;
+}
+.tel-number a{
+  text-decoration: none;
+  color: #fff;
+}
+.mail a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* PROFILE */
+.profile-conf {
+  margin-bottom: 50px;
+}
+.profile-font-color {
+  color: #151515;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.heading {
+  font-size: 2rem;
+}
+.section-conf {
+  padding: 50px 0 80px;
+  font-size: 1.5rem;
+}
+.section-line {
+  padding: 10px 10px;
+}
+.site-title {
+  font-size: 4rem;
+}
+.site-title-sub {
+  font-size: 1.5rem;
+}
+.vision-ul li {
+  font-size: 1.5rem;
+}
+
+  .site-title-sub::before,
+  .site-title-sub::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #fff;
+}
+/* contact */
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-form input[type=submit] {
+  width: 100px;
+}
+/* access */
+.access iframe {
+  width: 90%;
+  height: 500px;
+}
+
+}
