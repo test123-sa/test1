@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  /* background: #151515 url('../image/背景画像.jpg') no-repeat fixed left bottom;
+  background-size: cover; */
+  color: #151515;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Montserrat, Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  padding: 80px 30px;
+  margin: 0 100px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-title {
+  font-size: 7.6rem;
+  margin: 0px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.buttons {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  color: #151515;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  width: 200px;
+  padding: 20px;
+  border: solid 1px #151515;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #151515;
+  color: #fff;
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+/* main-pic */
+.main-pic {
+  position: relative;
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+.main-title{
+  position: absolute;
+  /* top: 30%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-family: 'Zen Kurenaido';
+  color: white;
+  transition: all 2s;
+  font-weight: bold;
+}
+.main-pic .main-image {
+	display: block;
+	width: 100%;
+	/* height: 800px; */
+}
+.main-pic .space-rocket {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: auto;
+  top: 30%;
+  right: 25%;
+}
+
+.heading {
+  margin: 30px 0px 15px;
+  letter-spacing: 2px;
+  font-size: 5rem;
+}
+
+.section-line {
+  padding: 30px 130px;
+}
+
+/* mission */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mission-block {
+  display: flex;
+  justify-content: space-around;
+}
+.mission-block img {
+  display: block;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.mission.section-line {
+  padding: 0;
+}
+
+.mission-text {
+  /* padding: 70px 0 100px; */
+  /* line-height: 2.5; */
+  width: 500px;
+  height: 400px;
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 1s;
+  /* transform: translate(0, 0);
+  opacity: 1; */
+}
+/* .mission p.move { 
+  translate: -10px 0;
+  opacity: 0;
+} */
+.mission-text.section-conf {
+  padding: 0;
+}
+.mission-middle {
+  display: table;
+
+}
+.mission .heading {
+  margin: 30px 0px 30px;
+}
+.section-conf {
+  padding: 50px 0 50px;
+  font-size: 2.8rem;
+}
+
+/* vision */
+.vision_value_image {
+  display: flex;
+  justify-content: space-between;
+}
+.vision_value_image img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.vision_value_image .section-line {
+  padding: 0;
+}
+.vision_value_image li {
+  transition: all 1s;
+}
+
+.vision ul {
+  /* padding: 70px 0 100px; */
+  display: block;
+  text-decoration: none;
+  line-height: 2;
+  
+}
+.vision li {
+  font-size: 2.8rem;
+  text-align: left;
+}
+.vision-all {
+  margin: 0 auto;
+  /* display: table; */
+  display: block;
+  /* transform:translateX(-50px);
+  opacity:0;
+  transition:opacity 1s,transform 0.5s; */
+  transition: all 1s;
+  /* transform: translate(0, 0); */
+}
+/* .fadein {
+  opacity: 1;
+  transform: translateX(0);
+} */
+.vision-ul {
+  width: auto;
+  /* text-align: left; */
+  
+}
+/* .vision-ul li {
+  text-align: left;
+} */
+.fa-check {
+  color: black;
+  border: 1px white;
+}
+/* value */
+.value-all {
+  margin: 0 auto;
+  display: table;
+  display: block;
+}
+.value-ul {
+  width: auto;
+  text-align: left;
+  line-height: 2;
+}
+/* .vision-ul li {
+  text-align: left;
+} */
+/* access */
+.map {
+  width: 100%;
+}
+
+/* contact */
+.contact-text {
+  transition: all 1s;
+}
+
+.contact-form {
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+  background-color: #fff;
+  color: #fff;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #151515;
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  transition: 0.4s;
+  background-color: #151515;
+  color: #fff;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-text.section-conf {
+  padding-bottom: 20px;
+}
+
+/* TEL/FAX/MAIL */
+.tel-conf {
+  font-size: 2.2rem;
+}
+.tel-number a{
+  text-decoration: none;
+  color: #151515;
+}
+.mail a{
+  text-decoration: none;
+  color: #151515;
+}
+
+/* PROFILE */
+.profile-conf {
+  margin-bottom: 50px;
+}
+.profile-font-color {
+  color: #151515;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .section-conf {
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 50px 0 0 0;
+  }
+  .section-line {
+    padding: 10px 10px;
+  }
+  /* header */
+.header {
+  padding: 50px 30px;
+  margin: 0;
+}
+.button {
+  padding: 8px 10px;
+  font-size: 1.5rem;
+}
+.buttons {
+  display: flex;
+}
+.main-nav {
+  flex-flow: column;
+}
+/* main-title */
+.main-title {
+  font-size: 3rem;
+  width: 500px;
+}
+.main-image {
+  height: auto;
+}
+.main-pic {
+  margin-bottom: 20px;
+}
+
+/* mission */
+.mission-block img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+  background-size: auto;
+}
+.container {
+  width: 100%;
+}
+.mission-text {
+  height: 200px;
+}
+
+/* vision */
+.vision-all {
+  margin: 0 auto;
+  width: 500px;
+}
+.vison-all ul {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.value-all {
+  margin: 0 auto;
+  width: 500px;
+}
+
+/* value */
+.value {
+  margin-top: 50px;
+}
+.vision_value_image img {
+  width: auto;
+  height: 400px;
+  margin-top: 50px;
+  display: block;
+}
+.value-block {
+  margin: 0 auto;
+  width: auto;
+}
+
+
+.site-title {
+  font-size: 4rem;
+}
+.site-title-sub {
+  font-size: 1.5rem;
+}
+.vision-ul li {
+  font-size: 1.5rem;
+}
+
+  .site-title-sub::before,
+  .site-title-sub::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #fff;
+}
+/* contact */
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-form input[type=submit] {
+  width: 100px;
+}
+/* access */
+.access iframe {
+  width: 90%;
+  height: 500px;
+}
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    flex-flow: column;
+  }
+  .mission-block {
+    flex-flow: column;
+  }
+  .vision_value_image {
+    flex-flow: column;
+  }
+}
