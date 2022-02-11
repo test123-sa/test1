@@ -6,7 +6,10 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
+.wrap {
+  /* 余白が発生してしまうため */
+  overflow: hidden;
+}
 body {
   background-color: white;
   /* background: #151515 url('../image/背景画像.jpg') no-repeat fixed left bottom;
@@ -334,6 +337,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .body {
+    /* min-width: 768px; */
+  }
   .heading {
     font-size: 2rem;
   }
@@ -364,7 +370,7 @@ ul {
 /* main-title */
 .main-title {
   font-size: 3rem;
-  width: 500px;
+  width: 550px;
 }
 .main-image {
   height: auto;
@@ -452,7 +458,7 @@ ul {
 }
 /* tel */
 .mail-conf{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 /* access */
 .access iframe {
