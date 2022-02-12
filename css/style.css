@@ -33,18 +33,25 @@ ul {
   display: flex;
   justify-content: space-around;
 }
-
+.site-title-main {
+  position: relative;
+}
+.site-title-sub {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 10%;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  /* font-weight: bold; */
+}
 .site-title {
   font-size: 7.6rem;
   margin: 0px;
 }
 
-.site-title-sub {
-  margin: 0 0 30px;
-  letter-spacing: 1px;
-  font-size: 2.2rem;
-}
-
+/* 
 .site-title-sub::before,
 .site-title-sub::after {
   content: '';
@@ -54,7 +61,7 @@ ul {
   margin: 0 30px;
   background-color: #fff;
   vertical-align: middle;
-}
+} */
 
 .buttons {
   vertical-align: middle;
@@ -438,7 +445,7 @@ ul {
 .vision-ul li {
   font-size: 1.5rem;
 }
-
+/* 
   .site-title-sub::before,
   .site-title-sub::after {
   content: '';
@@ -447,7 +454,7 @@ ul {
   height: 2px;
   margin: 10px auto;
   background-color: #fff;
-}
+} */
 /* contact */
 .contact-form {
   width: 100%;
