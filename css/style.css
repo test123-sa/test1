@@ -27,6 +27,16 @@ ul {
 .header {
   padding: 80px 30px;
   margin: 0 100px;
+  position: relative;
+}
+.header img{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 60px;
+  transform: translate(-50%, -50%);
+  left: 100%;
+  transform: rotate(-50deg);
 }
 
 .main-nav {
@@ -131,12 +141,12 @@ ul {
 }
 
 .section-line {
-  padding: 30px 130px;
+  padding: 30px 100px;
 }
 
 /* mission */
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -255,6 +265,16 @@ ul {
   border: 1px white;
 }
 /* value */
+.value {
+  position: relative;
+}
+.value img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10%;
+  transform: rotate(-200deg);
+}
 .value-all {
   margin: 0 auto;
   display: table;
@@ -274,6 +294,16 @@ ul {
 }
 
 /* contact */
+.contact {
+  position: relative;
+}
+.contact img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 10%;
+  transform: rotate(-50deg);
+}
 .contact-text {
   transition: all 1s;
 }
@@ -335,17 +365,51 @@ ul {
 }
 
 /* PROFILE */
+.profile {
+  position: relative;
+}
+.profile img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 20%;
+  transform: rotate(-200deg);
+}
 .profile-conf {
   margin-bottom: 50px;
+  position: relative;
+}
+.profile-conf img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: rotate(310deg);
+  left: 80%;
 }
 .profile-font-color {
   color: #151515;
   font-weight: bold;
 }
-
+/* footer */
+footer {
+  position: relative;
+  bottom: 0;
+}
+footer img {
+  position: absolute;
+  width: 100%;
+  background: no-repeat center top;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: -10;
+}
 @media (max-width: 768px) {
-  .body {
-    /* min-width: 768px; */
+  .header img {
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    left: 80%;
   }
   .heading {
     font-size: 2rem;
@@ -434,7 +498,11 @@ ul {
   margin: 0 auto;
   width: auto;
 }
-
+.value img {
+  width: 30px;
+  height: 30px;
+  top: -40px;
+}
 
 .site-title {
   font-size: 4rem;
@@ -463,6 +531,10 @@ ul {
 .contact-form input[type=submit] {
   width: 100px;
 }
+.contact img {
+  width: 30px;
+  height: 30px;
+}
 /* tel */
 .mail-conf{
   font-size: 1.8rem;
@@ -471,6 +543,15 @@ ul {
 .access iframe {
   width: 90%;
   height: 500px;
+}
+/* profile */
+.profile img {
+  width: 30px;
+  height: 30px;
+}
+.profile-conf img {
+  width: 30px;
+  height: 30px;
 }
 }
 
@@ -514,3 +595,17 @@ ul {
   margin: 0 auto;
 }
 }
+/* footer */
+/* footer {
+  position: relative;
+  bottom: 0;
+}
+footer img {
+  position: absolute;
+  width: 100%;
+  background: no-repeat center top;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: -10;
+} */
