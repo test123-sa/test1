@@ -167,27 +167,26 @@ ul {
 }
 
 .mission-text {
-  /* padding: 70px 0 100px; */
-  /* line-height: 2.5; */
   width: 500px;
   height: 400px;
   margin: 0;
   display: table-cell;
   vertical-align: middle;
   transition: all 1s;
-  /* transform: translate(0, 0);
-  opacity: 1; */
 }
-/* .mission p.move { 
-  translate: -10px 0;
-  opacity: 0;
-} */
 .mission-text.section-conf {
   padding: 0;
 }
 .mission-middle {
   display: table;
-
+}
+.service-middle {
+  display: table;
+}
+.service-ul {
+  
+  display: table-cell;
+  vertical-align: middle;
 }
 .mission .heading {
   margin: 30px 0px 30px;
@@ -295,6 +294,32 @@ ul {
 /* .vision-ul li {
   text-align: left;
 } */
+
+/* service */
+.service {
+  width: 100%;
+}
+.service-block {
+  display: flex;
+  justify-content: space-around;
+}
+.service-block img {
+  display: block;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+.service-ul {
+  vertical-align: middle;
+
+}
+.service-ul li {
+  font-size: 2.8rem;
+  text-align: left;
+  line-height: 2;
+  transition: all 1s;
+}
 /* access */
 .map {
   width: 100%;
@@ -509,7 +534,7 @@ footer img {
   display: block;
   margin: 0 auto;
   width: 90%;
-  height: 300px;
+  height: auto;
   background-size: cover;
 }
 .value img {
@@ -527,16 +552,25 @@ footer img {
 .vision-ul li {
   font-size: 1.5rem;
 }
-/* 
-  .site-title-sub::before,
-  .site-title-sub::after {
-  content: '';
+
+/* service */
+.service-ul li {
+  font-size: 1.5rem;
+}
+.service-block img {
   display: block;
-  width: 50%;
-  height: 2px;
-  margin: 10px auto;
-  background-color: #fff;
-} */
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-size: cover;
+}
+.service-block-img {
+  padding-top: 10px;
+}
+.service-middle {
+  margin: 15px 0;
+}
+
 /* contact */
 .contact-form {
   width: 100%;
@@ -612,20 +646,12 @@ footer img {
   margin: 0 auto;
 }
 }
-/* footer */
-/* footer {
-  position: relative;
-  bottom: 0;
-}
-footer img {
-  position: absolute;
-  width: 100%;
-  background: no-repeat center top;
-  left: 0;
-  bottom: 0;
-  opacity: 0.7;
-  z-index: -10;
-} */
 footer img {
   opacity: 0.6;
+}
+/* service */
+.service-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
 }
